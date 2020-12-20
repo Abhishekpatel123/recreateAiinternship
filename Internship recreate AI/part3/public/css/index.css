@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bestColor : brown;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
+.form input[type="search"]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+}
+.form button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--bestColor);
+    margin-left: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .4s ease;
+
+}
+.form button:hover{
+    border: 1px solid var(--bestColor);
+    color: black;
+    background-color: white;
+}
+
+.main{
+    display: none;
+}
+
+.player-photo-div{
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.player-photo-div > img{
+    height: 250px;
+}
+
+.name-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+
+}
+
+.player-info1 {
+    display: grid;
+    /* display: none; */
+    grid-template-rows: repeat(5,auto);
+    margin: 10px 0;
+}
+.player-info1 div{
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid gray; */
+
+}
+.player-info1 div > p:first-child{
+    /* margin-right: 9rem; */
+    width: 40%;
+    font-weight: 900;
+    color: gray;
+}
+
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 0;
+    margin: 3rem 0 2rem 0;
+}
+
+
+.batting-perfor-div , .bowling-perfor-div{
+    display: grid;
+    /* display: none; */
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 20px;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+.batting-perfor-div .top , .batting-perfor-div .middle, .batting-perfor-div .bottom , .top2 , .middle2 , .bottom2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(10px , 1fr));
+    border: 1px dotted green;
+}
+
+
+
+
+.not-searched{
+    margin: 100px auto;
+    color: aliceblue;
+    width: 80%;
+    height: 60vh;
+    text-align: center;
+    background-color: black;
+    display: grid;
+    /* display: none; */
+    place-items: center;
+    box-shadow: 0 0 10px gray;
+}
+
+.not-searched > h1{
+    color: aliceblue;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px gray;
+}
